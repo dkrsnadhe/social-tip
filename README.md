@@ -1,66 +1,77 @@
-## Foundry
+# MessageBoard Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Descriptions
 
-Foundry consists of:
+This is a contract for managing a messages
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Feature
 
-## Documentation
+This smart contract has two main functionality
 
-https://book.getfoundry.sh/
+- Function for creating message
+- Function for getting message
 
-## Usage
+## Objective and Benefits
 
-### Build
+- Build efficient smart contracts to organize message
 
-```shell
-$ forge build
-```
+## Other Information
 
-### Test
+This smart contract has been deployed on Sepolia test network
 
-```shell
-$ forge test
-```
+- Smart contract address: 0xB6283fb375E36112b7543f0a856A79c387CF19Ac
 
-### Format
+# ProfileStatus Contract
 
-```shell
-$ forge fmt
-```
+## Descriptions
 
-### Gas Snapshots
+this is a contract by which users can manage their status
 
-```shell
-$ forge snapshot
-```
+## Feature
 
-### Anvil
+This smart contract has two main functionality
 
-```shell
-$ anvil
-```
+- Function for creating status
+- Function for update status
 
-### Deploy
+Also with other functionality
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+- Function for get status
 
-### Cast
+## Objective and Benefits
 
-```shell
-$ cast <subcommand>
-```
+- Build efficient smart contracts to organize profile status
 
-### Help
+## Other Information
 
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This smart contract has been deployed on Sepolia test network
+
+- Smart contract address: 0x0De331001b40e7bD792A8b412C2cdD34DB1f6F40
+
+# TipContract
+
+## Descriptions
+
+This contract allows users to give tips to owner of contract
+
+## Feature
+
+This smart contract has two main functionality
+
+- Function for tipping
+- Function for withdraw tip
+
+Also with other functionality
+
+- Function for get contract balance
+
+## Objective and Benefits
+
+- Build efficient smart contracts to allow user to tipping the owner
+- Build trusted system based on transparancy
+
+## Other Information
+
+This smart contract has been deployed on Sepolia test network
+
+- Smart contract address: 0xb933A69Ee4ba58C34030d6a7951Abb5F29080520
