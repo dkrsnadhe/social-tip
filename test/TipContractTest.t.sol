@@ -11,6 +11,8 @@ contract TipContractTest is Test {
         tipContract = new TipContract();
     }
 
+    receive() external payable {}
+
     function testOwner() public {
         assertEq(tipContract.owner(), address(this));
     }
@@ -18,6 +20,12 @@ contract TipContractTest is Test {
     function testTip() public {
         tipContract.tip{value: 1}();
         assertEq(address(tipContract).balance, 1);
+    }
+
+    function testWithdrawTip() public {
+        tipContract.tip{value: 1}();
+        tipContract.withdrawTip();
+        assertEq(address(tipContract).balance, 0);
     }
 
     function testTipContractBalance() public {
